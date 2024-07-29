@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Kyle</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">Kyle Chun</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="eden.html" class="active">FINAL QMD PROJECT</a></li>
+          <!--<li><a href="elements.html">Elements</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">FINAL QMD PROJECT</h1>
+          <span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+          <b> Tools: R, ggplot2, Plotly, RStudio </b>
+
+          <p>
+            In this project, I aimed to analyze and visualize data from three
+            different datasets—storms, electric vehicle population, and election
+            data—to identify patterns and insights. The processes followed are
+            as follows:
+          </p>
+
+          <ol>
+            <li>
+              <b>Data Preparation and Cleaning:</b>
+              <ul>
+                <li>
+                  Loaded the datasets: storms, countypres_2000-2020.csv
+                  (election data), and Electric_Vehicle_Population_Data.csv
+                  (electric vehicle data).
+                </li>
+                <li>
+                  Cleaned the datasets by removing unnecessary columns and
+                  handling missing values. Converted state and county names to
+                  lowercase for consistency.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Grouping and Summarizing Data:</b>
+              <ul>
+                <li>
+                  Grouped the electric vehicle dataset by county to analyze
+                  vehicle distributions.
+                </li>
+                <li>
+                  Summarized election data by state to calculate total votes.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Data Visualization:</b>
+              <ul>
+                <li>
+                  Created bar plots to visualize total votes by state and by
+                  candidates in the election dataset using ggplot2.
+                </li>
+                <li>
+                  Generated a choropleth map to display total votes in selected
+                  states using spatial data from rnaturalearth and election
+                  data.
+                </li>
+                <li>
+                  Produced violin plots to show the distribution of vehicle
+                  model years and different makes in the electric vehicle
+                  dataset.
+                </li>
+                <li>
+                  Developed scatter plots to explore the relationship between
+                  vehicle model year and postal code.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Geographical Mapping:</b>
+              <ul>
+                <li>
+                  Focused on Canadian provinces by generating spatial data for
+                  Canada and visualized it using ggplot2.
+                </li>
+                <li>
+                  Mapped storm data from the year 2010, highlighting storm
+                  tracks and locations over a map of Canada.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Animation & Feature Engineering:</b>
+              <ul>
+                <li>
+                  Animated storm data from 2010 using gganimate to visualize the
+                  movement and development of storms over time.
+                </li>
+                <li>
+                  Created new variables to aid in data analysis and
+                  visualization, such as combining date and time information for
+                  storm data.
+                </li>
+                <li>
+                  Implemented mutating functions to transform and prepare data
+                  for visualization and analysis.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <b>Final Visualization:</b>
+              <ul>
+                <li>
+                  Cleaned up previous plots and integrated animations to create
+                  a comprehensive visual representation of storm data in 2010.
+                </li>
+                <li>
+                  Used ggplot2 and animate to produce dynamic visualizations.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
