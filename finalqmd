@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Generic - Hyperspace by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">Kyle Chun</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="eden.html" class="active">FINALQMD PROJECT</a></li>
+          <!--<li><a href="elements.html">Elements</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">EDEN HOUSING SCHOLARSHIP PROJECT</h1>
+          <span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+          <b>
+            Tools: NumPy, Pandas, Seaborn, Matplotlib, NLTK, Scikit-learn,
+            Deepnote
+          </b>
+
+          <p>
+            In this project, I aimed to develop a Logistic Regression model
+            capable of accurately distinguishing between real and fake news
+            articles. The dataset used consisted of a comprehensive collection
+            of news articles, each labeled as either real or fake. The process
+            involved several key steps:
+          </p>
+
+          <ol>
+            <li><b>Data Preparation and Cleaning:</b>
+				<ul>
+					<li>Loaded the dataset using pandas and removed any unnecessary columns and missing values to ensure data integrity.</li>
+					<li>Converted all text to lowercase to maintain consistency in text processing.</li>
+				</ul>
+			</li>
+
+            <li><b>Train-Test Split:</b>
+				<ul>
+					<li>Split the dataset into training and testing sets using a 70-30 split.</li>
+					<li>Evaluate the model's performance on unseen data. </li>
+				</ul>
+			</li>
+
+            <li><b>Exploratory Data Analysis (EDA) and Feature Engineering:</b>
+				<ul>
+					<li>Analyzed the frequency of certain words in fake and real articles to identify potential distinguishing features.</li>
+					<li>Developed various text-based features such as punctuation ratio, numeric ratio, stopword ratio, average word length, and sentiment score using the TextBlob library.</li>
+					<li>Visualized the distribution of these features to understand their significance and relationship with the target labels (real or fake).</li>
+				</ul>
+			</li>
+
+			<li><b>Feature Extraction:</b>
+				<ul>
+					<li>Implemented a custom function, word_map, to create a 2D array indicating the presence of specific words in each article.</li>
+					<li>Extracted additional features such as the frequency of semicolons, exclamation marks, URLs, mentions, hashtags, emojis, unique words, repeated letters, consecutive capital letters, special characters, contractions, all-caps words, and emoticons. </li>
+				</ul>
+			</li>
+
+			<li><b>Model Training and Evaluation</b>
+				<ul>
+					<li> Trained a Logistic Regression model on the processed training data.</li>
+					<li> Evaluated the model's performance using accuracy scores on both the training and testing datasets to ensure it generalizes well to new data. </li>
+				</ul>
+			</li>
+
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
