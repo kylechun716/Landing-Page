@@ -51,42 +51,82 @@
           </p>
 
           <ol>
-            <li><b>Data Preparation and Cleaning:</b>
-				<ul>
-					<li>Loaded the dataset using pandas and removed any unnecessary columns and missing values to ensure data integrity.</li>
-					<li>Converted all text to lowercase to maintain consistency in text processing.</li>
-				</ul>
-			</li>
+            <li>
+              <b>Data Preparation and Cleaning:</b>
+              <ul>
+                <li>
+                  Loaded the dataset using pandas and removed any unnecessary
+                  columns and missing values to ensure data integrity.
+                </li>
+                <li>
+                  Converted all text to lowercase to maintain consistency in
+                  text processing.
+                </li>
+              </ul>
+            </li>
 
-            <li><b>Train-Test Split:</b>
-				<ul>
-					<li>Split the dataset into training and testing sets using a 70-30 split.</li>
-					<li>Evaluate the model's performance on unseen data. </li>
-				</ul>
-			</li>
+            <li>
+              <b>Train-Test Split:</b>
+              <ul>
+                <li>
+                  Split the dataset into training and testing sets using a 70-30
+                  split.
+                </li>
+                <li>Evaluate the model's performance on unseen data.</li>
+              </ul>
+            </li>
 
-            <li><b>Exploratory Data Analysis (EDA) and Feature Engineering:</b>
-				<ul>
-					<li>Analyzed the frequency of certain words in fake and real articles to identify potential distinguishing features.</li>
-					<li>Developed various text-based features such as punctuation ratio, numeric ratio, stopword ratio, average word length, and sentiment score using the TextBlob library.</li>
-					<li>Visualized the distribution of these features to understand their significance and relationship with the target labels (real or fake).</li>
-				</ul>
-			</li>
+            <li>
+              <b>Exploratory Data Analysis (EDA) and Feature Engineering:</b>
+              <ul>
+                <li>
+                  Analyzed the frequency of certain words in fake and real
+                  articles to identify potential distinguishing features.
+                </li>
+                <li>
+                  Developed various text-based features such as punctuation
+                  ratio, numeric ratio, stopword ratio, average word length, and
+                  sentiment score using the TextBlob library.
+                </li>
+                <li>
+                  Visualized the distribution of these features to understand
+                  their significance and relationship with the target labels
+                  (real or fake).
+                </li>
+              </ul>
+            </li>
 
-			<li><b>Feature Extraction:</b>
-				<ul>
-					<li>Implemented a custom function, word_map, to create a 2D array indicating the presence of specific words in each article.</li>
-					<li>Extracted additional features such as the frequency of semicolons, exclamation marks, URLs, mentions, hashtags, emojis, unique words, repeated letters, consecutive capital letters, special characters, contractions, all-caps words, and emoticons. </li>
-				</ul>
-			</li>
+            <li>
+              <b>Feature Extraction:</b>
+              <ul>
+                <li>
+                  Implemented a custom function, word_map, to create a 2D array
+                  indicating the presence of specific words in each article.
+                </li>
+                <li>
+                  Extracted additional features such as the frequency of
+                  semicolons, exclamation marks, URLs, mentions, hashtags,
+                  emojis, unique words, repeated letters, consecutive capital
+                  letters, special characters, contractions, all-caps words, and
+                  emoticons.
+                </li>
+              </ul>
+            </li>
 
-			<li><b>Model Training and Evaluation</b>
-				<ul>
-					<li> Trained a Logistic Regression model on the processed training data.</li>
-					<li> Evaluated the model's performance using accuracy scores on both the training and testing datasets to ensure it generalizes well to new data. </li>
-				</ul>
-			</li>
-
+            <li>
+              <b>Model Training and Evaluation</b>
+              <ul>
+                <li>
+                  Trained a Logistic Regression model on the processed training
+                  data.
+                </li>
+                <li>
+                  Evaluated the model's performance using accuracy scores on
+                  both the training and testing datasets to ensure it
+                  generalizes well to new data.
+                </li>
+              </ul>
+            </li>
           </ol>
         </div>
       </section>
